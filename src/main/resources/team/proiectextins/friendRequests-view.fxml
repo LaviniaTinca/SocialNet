@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team.proiectextins.controller.FriendRequestsController">
+    <top>
+        <AnchorPane prefHeight="48.0" prefWidth="800.0" style="-fx-background-color: #be9b7b;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="friendRequestsButton" alignment="CENTER" layoutX="601.0" layoutY="11.0" mnemonicParsing="false" onAction="#friendRequestsButtonOnAction" style="-fx-background-color: #CFB59D; -fx-cursor: hand;" textFill="#4b3832">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@images/friend_request_white_ui.png" />
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Friend Requests" />
+                    </tooltip>
+                </Button>
+                <Button fx:id="friendsButton" alignment="CENTER" layoutX="556.0" layoutY="11.0" mnemonicParsing="false" onAction="#friendsButtonOnAction" style="-fx-background-color: #CFB59D; -fx-cursor: hand;" textFill="#4b3832">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@images/friends_ui.png" />
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Friends List" />
+                    </tooltip>
+                </Button>
+
+                <Label layoutX="173.0" layoutY="11.0" prefHeight="28.0" prefWidth="36.0" />
+                <Button fx:id="homeButton" alignment="CENTER" layoutX="509.0" layoutY="11.0" mnemonicParsing="false" onAction="#homeButtonOnAction" prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: #CFB59D; -fx-cursor: hand;" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@images/home_ui.png" />
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Home" />
+                    </tooltip>
+                </Button>
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane prefHeight="362.0" prefWidth="174.0" style="-fx-background-color: #522b47;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="29.0" layoutY="42.0" prefHeight="36.0" prefWidth="116.0" text="Cappuccino" textFill="#f2f2f2">
+                    <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                    </font>
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="0.4745098054409027" green="0.27843138575553894" blue="0.27843138575553894" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <Label alignment="CENTER" layoutX="29.0" layoutY="79.0" prefHeight="36.0" prefWidth="116.0" text="Talk Time" textFill="#f2f2f2">
+                    <font>
+                        <Font name="Lucida Calligraphy Italic" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="0.4745098054409027" green="0.27843138575553894" blue="0.27843138575553894" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <Line endX="73.0" endY="-32.0" layoutX="61.0" layoutY="110.0" startX="-26.0" startY="-32.0" stroke="#794747" />
+                <Circle fill="#1f93ff00" layoutX="87.0" layoutY="67.0" radius="61.0" stroke="#c9afaf" strokeType="INSIDE" />
+                <Label fx:id="loggedUserNameLabel" alignment="CENTER" layoutX="2.0" layoutY="268.0" prefHeight="26.0" prefWidth="166.0" textFill="#f4ebd9" AnchorPane.topAnchor="268.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Label>
+                <Button fx:id="logoutButton" alignment="CENTER" layoutX="48.0" layoutY="301.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #CFB59D; -fx-cursor: hand;" text="Logout" textFill="#4b3832">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="38.0" layoutY="246.0" prefHeight="17.0" prefWidth="93.0" text="Welcome," textFill="#ebebeb">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="117.0" fitWidth="132.0" layoutX="21.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/cappuccinoc.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+
+    </left>
+
+    <center>
+        <AnchorPane prefHeight="352.0" prefWidth="187.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutX="-16.0" layoutY="-1.0" prefHeight="373.0" prefWidth="191.0" style="-fx-background-color: #be9b7b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-21.0" AnchorPane.topAnchor="-1.0">
+                    <children>
+                        <Label fx:id="messageLabel1" alignment="CENTER" layoutX="12.0" layoutY="14.0" prefHeight="17.0" prefWidth="164.0" text="Sent friend requests" textFill="WHITE">
+                            <font>
+                                <Font name="System Italic" size="13.0" />
+                            </font>
+                        </Label>
+                        <TableView fx:id="sentRequestsTableView" layoutX="15.0" layoutY="38.0" prefHeight="287.0" prefWidth="172.0">
+                            <columns>
+                                <TableColumn fx:id="toColumn" prefWidth="126.99999046325684" text="To" />
+                            </columns>
+                        </TableView>
+                        <Button fx:id="deleteRequestButton" alignment="CENTER" layoutX="74.0" layoutY="335.0" mnemonicParsing="false" onAction="#deleteRequestButtonOnAction" prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: #CFB59D; -fx-cursor: hand;" textFill="#4b3832">
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@images/delete_ui.png" />
+                                </ImageView>
+                            </graphic>
+                            <tooltip>
+                                <Tooltip text="Delete Friend Request" />
+                            </tooltip>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </center>
+    <right>
+        <AnchorPane prefHeight="352.0" prefWidth="456.0" style="-fx-background-color: #be9b7b;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" layoutX="24.0" layoutY="38.0" prefHeight="286.0" prefWidth="444.0" styleClass="receivedRequests" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="-12.0" AnchorPane.topAnchor="38.0">
+              <columns>
+                <TableColumn fx:id="fromTableColumn" prefWidth="119.0" text="From" />
+                  <TableColumn fx:id="statusTableColumn" prefWidth="104.0" text="Status" />
+                  <TableColumn fx:id="dateTableColumn" prefWidth="116.0" text="Date" />
+              </columns>
+            </TableView>
+            <Button fx:id="acceptFriendRequestButton" alignment="CENTER" layoutX="200.0" layoutY="335.0" mnemonicParsing="false" onAction="#acceptFriendRequestButtonOnAction" prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: #CFB59D; -fx-cursor: hand;" textFill="#4b3832">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@images/accept_ui.png" />
+                    </ImageView>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Accept Friend Request" />
+                </tooltip>
+            </Button>
+            <Button fx:id="rejectFriendRequestButton" alignment="CENTER" layoutX="251.0" layoutY="335.0" mnemonicParsing="false" onAction="#rejectFriendRequestButtonOnAction" prefHeight="28.0" prefWidth="36.0" style="-fx-background-color: #CFB59D; -fx-cursor: hand;" textFill="#4b3832">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@images/reject_ui.png" />
+                    </ImageView>
+                </graphic>
+                <tooltip>
+                    <Tooltip text="Reject Friend Request" />
+                </tooltip>
+            </Button>
+            <Label fx:id="messageLabel11" layoutX="179.0" layoutY="14.0" prefHeight="17.0" prefWidth="164.0" text="Received Friend Requests" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+        </AnchorPane>
+    </right>
+    <stylesheets>
+        <URL value="@styles/userStyle.css" />
+    </stylesheets>
+</BorderPane>
