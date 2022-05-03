@@ -3,9 +3,10 @@
 Proiect extins pentru laborator MAP 2021/2022, Java Fx, Postgres
 SocialNet este o aplicatie de tip retea de socializare, se foloseste de baza de date si permite:
 
-Înlocuiți interfața cu utilizatorul de la proiectul de laborator din versiunea Lab5_MAP  cu interfață grafică (GUI).
 Interfata grafica (GUI) ofera următoarele funcționalități:
--F1. Add/Remove Prieten(2p). oSugestie   scenariu   de   implementare   (daca   nu   ati   implementat   cumva   partea   de autentificare): 
+
+-F1. Add/Remove Prieten.
+oSugestie   scenariu   de   implementare   (daca   nu   ati   implementat   cumva   partea   de autentificare): 
   la pornirea aplicatiei, aceasta sa ofere posibilitatea cautarii unui utilizator din  reteaua  de  socializare  si  sa afiseze  intr-un  tabel  informatiile  despre 
   toti  prietenii acestuia;  utilizatorul  aplicatiei    (a  nu  se  confunda  cu  userii  din  reteaua  de  socializare) poate selecta,  daca doreste,  
   un prieten din lista  afisata  pe  care  apoi poate sa il stearga(actionand  un  buton  delete),  sau  poate  adauga  un  nou  prieten,  printr-o  cerere  de prietenie
